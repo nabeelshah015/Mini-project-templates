@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://media.licdn.com/dms/image/C4D12AQFcTs5zXFP1Hw/article-cover_image-shrink_600_2000/0/1520061889110?e=2147483647&v=beta&t=sAwmH28Ty-pTKa1jAwXn5DtEW0FXXAWjJnWfcnMOnlE');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: rgba(0, 86, 179, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Power Plant Performance Prediction</h1>
+    <p>The predicted performance is: {{ prediction }}</p>
+    <a href="/">Go back to Home</a>
+</body>
+</html>
